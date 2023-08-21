@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100;200;300;400;500;600&family=Noto+Sans+Lao:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+}
+body {
+    
+}
+
+/* header css */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+}
+.logo-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 130px;
+}
+.title {
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+}
+p {
+    color: #f92828;
+}
+.socials img {
+    width: 40px;
+    border-radius: 4px;
+}
+
+/* Navbar css */
+
+.menu {
+    background-color: #0394E8;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    color: #fff;
+}
+.navbar a:hover {
+    background-color: #066bbe;
+    color: #fff;
+}
+
+/* Sound news css */
+.live-sounds {
+    display: flex;
+    padding: 2rem 0;
+    gap: 2rem;
+    justify-content: center;
+}
+.on-air {
+    width: 325px;
+}
+.on-air h2 {
+    color: #f92828;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+.player-mp3 {
+    margin-bottom: 1rem;
+}
+.player-mp3 h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sounds-news {
+    width: 790px;
+}
+.title-supporter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-supporter h2 {
+    font-size: 30px;
+}
+.title-supporter img {
+    width: 200px;
+}
+.sound-news-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+}
+.sound-news-list li {
+    list-style: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: .8rem;
+    transform: scale(1);
+    transition: .5s;
+}
+.sound-news-list li:hover {
+    transform: scale(1.05);
+}
+.sound-news-list li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sound-news-list li a img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    align-items: center;
+}
+
+
+/* artical css */
+
+.news-video {
+    display: flex;
+    justify-content: space-between;
+}
+.feed-news {
+    width: 70%;
+}
+.feed-videos {
+    width: 28%;
+}
+.news {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    margin: 1rem 0;
+}
+.news div {
+    position: relative;
+}
+.left-top, .left-bottom, .right-top, .right-bottom {
+    width: 430px;
+    height: 300px;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+
+.left-top img, .right-bottom img {
+    width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: .4s;
+}
+.left-bottom, .right-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.left-bottom div img, .right-top div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: .4s;
+}
+.left-top img:hover, .right-bottom img:hover, .left-bottom div img:hover, .right-top div img:hover {
+    transform: scale(1.05);
+    
+}
+.news div > h3 {
+    position: absolute;
+    z-index: 10;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    color: #fff;
+}
+.highlight {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    background-color: #1363df;
+    padding: 2px 10px;
+    border-radius: 6px;
+    color: #fff;
+
+}
+.seemore {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.seemore:hover {
+    color: red;
+    
+}
+
+/* Section css */
+.others {
+    text-align: center; 
+    margin: 3rem 0;
+}
+.other-news {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.news-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.news-item img {
+    width: 280px;
+    height: 165px;
+    object-fit: cover;
+}
+.news-item h4 {
+    position: absolute;
+    font-size: 20px;
+    color: #ffff;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+}
+
+/* Photo News css */
+.photo-news {
+    text-align: center;
+    margin: 4rem 0;
+}
+.photo-news h3 {
+    font-size: 24px;
+}
+.photo-slide-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn {
+    font-size: 28px;
+}
+
+/* Journal CSS */
+.journal {
+    display: grid;
+    justify-content: center;
+    text-align: center; 
+    margin-bottom: 3rem;
+}
+.journal h1 {
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+.bottom-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.bottom-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    transition: 0.3s;
+}
+.bottom-menu a:nth-child(1) {
+    background-color: #1363df;
+}
+.bottom-menu a:hover, .bottom-menu a:focus {
+    background-color: #1363df;
+}
+.journal-info {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.journal-item {
+    width: 235px;
+    height: 350px;
+    transition: .3s;
+    padding: 2px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+.journal-item:hover {
+    transform: translateY(-1rem);
+}
+.journal-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.journal-item p {
+    color: #000;
+    text-align: start;
+}
+
+/* Footer css */
+
+footer {
+    background-color: #0394E8;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div {
+    text-align: center;
+}
